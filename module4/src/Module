@@ -1,0 +1,36 @@
+- UML: communicate key analysis design concept. UML is program-language agnostic and acts as a lingua franca.
+    The UML is also high enough in abstraction that non technical and semi-technical people can also participate and help us in reviews and validation sessions.
+    UML is a language of its own and way too extensive to cover completely in this course.
+- Class diagram: one type of the graphical modeling language. It is used it to understand the structure of the system.
+    Class diagram shows what we call a static or structural view of architecture. So a class diagram shows things, multiplicity,
+    and relationships, which is a big piece of how we want to represent our architectures, especially for this course.
+    Class diagrams do not represent the dynamic behavior of our systems, and so even though class diagrams are useful, they are not
+    exhausive.
+- There are many type of reuse. The topic of reuse in software engineering can encompass the reuse of any of the following
+    requirements, analysis or effects, designs, and or tests.
+    1 How much formalization will a team use in the reuse process?
+    2 Will reuse be ad hoc opportunistics or will there be more regoous process that classifies, cerfifies, and updates reuse of assets
+    3 Will the reuse be on individual basis or a department wide or at the enterprise level
+    4 Who pays for reuse and who pays for fixing and updating the assets that many teams rely on?
+- Inheritance is a smiple example of code reuse. The derived class, by inheriting from the base class, reuses its functionaility (instead of
+    reimplementing it). But inheritance can create subtle issues.
+    + Derived class or subclass or child class any of those inherit from base class, superclass or parent class.
+    + By reusing code from shape circle promises it can do everything a shape does and possibly more. This kind of code reuse
+        allows us to use the functionality and structure of existing elements rather than reimplementing everything from scratch.
+    + Inheritance implies that there are similarity form and function between the superclass and subclass.
+        Essentially in addition to inheriting behavior, the subclass takes on a similar structural form that the superclass
+        has already established.
+        - It gives the subclass access to any non private members of its superclass.
+        - Inheritance focus on implementation. It allows us to reuse code in a logical way when the class hierarchy lends
+            itself to that type of reuse.
+        - Java interface and analogous structure in other language help us to model types.
+        - A superclass subclass relationship is not necessarily a supertype subtype relationship
+        - Supertype subtype: Interface. Use Implements keyword, we are actually creating a supertype-subtype relationship
+            implement is used with Interface. So if it is a supertype subtype relationship
+            Example: putGasIn, StepOnBreak, StepOnGas, ...
+        - Superclass subclass: Abstract. Method is creating by using Extends keyword. Extends keyword is used in abstract normally.
+            Example: Vehicles could be car, motor, or bike
+- Association is a "has-a" type of relationship
+- Inheritance is "Is-A" type of relationship
+- Composition is a "part of" relationship. Engine is a part of each car and both are dependent on each other.
+- Aggregation is based on "has-a" relationship.

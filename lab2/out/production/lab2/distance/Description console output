@@ -1,0 +1,13 @@
+Displacement = 1.7320508075688772
+Prof. Keith is on the move! His Velocity =0.34641016151377546
+Encountered an error: Elapsed time for velocity cannot be less than or equal to 0
+
+The lines above are the first run in which the Point3D one = new Point3D() and
+Pointer3D two = new Point3D(1, 1, 1). The first line invokes Point3D object to called
+distanceTo method. Hence, the first line is just printing out the result of the distanceTo method.
+We saw a lot of decimal points or precision because distanceTo method return double. The second line
+prints out the invoke Physics object. The object is then called its method velocity. We saw a lot of
+decimal because velocity returns double. The third line through an illegal argument rather than
+calculate the velocity because our elapsedTime is equal 0 and that is illegal and we have defined
+it in our velocity method under Physics class.
+

@@ -1,0 +1,38 @@
+README
+
+We have 2 different shape that implement, Oval and Rectangle.
+Both shape are inherited from its parent class AbstractShape and the AbstractShape Implement
+the IShape interface.
+
+- The X and Y coordinate are the coordinate point which we will use to plot the shape on the canvas.
+    For rectangle shape, the X and Y coordinate are the bottom left of X and Y axix.
+    For oval shape, the X and Y coordinate are the middle point of it.
+
+- r is the RED color, g is the Green color and B is the Blue color in the RGB color range.
+    There is a check if the r, g, b is less than 0 or greater than 255.
+
+- Width is the width and height is the height for the rectangle. However, for the oval, width is
+    the x radius and y is the y radius.
+
+- There are plenty of methods that we implement under the AbstractShape class and some we overwrite
+    it in the Rectangle and Oval class. (See the UML Diagram for more information).
+
+We will place these two shapes onto the photoAlblum. Hence, we create the IPhotoAlbum interface.
+The IPhotoAlbum allows us to addshape, changeposition, changecolor, changeshapesize, print out
+the snapshotinformation, get the list of the shape and restart.
+
+We also create a concrete class call PhotoAlbum which implement the IPhotoAlbum.
+
+We have the ChangeColor, ChangePosition and ChangeShapeSize which are the children of the AbstractChange
+class and AbstractChange implements the IChange interface.
+    - The reason that we create another abstract class call abstract change and implement
+    ChangeColor, ChangePosition and ChangeShapeSize as its children class is because we want to
+    see sort the changes that we create in the photo album in order of start time. If the change
+    first change position happen earlier than the second change position then in our
+    String method for shapeListTransformationString, we will be able to see those changes in
+    the order of start time.
+
+Changes for the HW9
+- Adding the remove method
+- Alter the method shapeListToString to use the shapeListCopy instead so that we we could store
+the shapeList into the shapeListCopy hashmap and use it to give out the information.

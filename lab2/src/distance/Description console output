@@ -1,0 +1,25 @@
+Displacement = 1.7320508075688772
+Prof. Keith is on the move! His Velocity =0.34641016151377546
+Encountered an error: Elapsed time for velocity cannot be less than or equal to 0
+
+The lines above are the first run in which the Point3D one = new Point3D() and
+Pointer3D two = new Point3D(1, 1, 1). The first line invoked Point3D object to called
+distanceTo method. Hence, the first line is just printing out the result of the distanceTo method.
+We saw a lot of decimal points or precision because distanceTo method return double. The second line
+prints out the invoke Physics object. The object is then called its method velocity. We saw a lot of
+decimal because velocity returns double. The third line threw an illegal argument rather than
+calculating the velocity because our elapsedTime is equal 0 and that is illegal as we defined
+it in our velocity method under Physics class.
+
+----------------------------------------------------------------------------------------------------
+Displacement = 1.7320508075688772
+Encountered an error: Elapsed time for velocity cannot be less than or equal to 0
+
+This is the second run of Physics class. We swapped the elapsedTime values in the method calls
+such that 5 becomes 0 and the 0 becomes 5. This first line is the same as the first run; it calculated 
+the distanceTo method. We see a lot of precision or decimal because distanceTo return double. 
+Also because of the swap, when the program calculated the velocity, it hit the 0 elapsed time. 
+We handled it gracefully by throwing a new IllegalArgumentException. That causes the current method 
+exit immediately after throwing that exception. That is why we only see the 
+"Encountered an error: Elapsed time.... equal to 0" and the next line of code when 
+elapsedTime = 5 not getting executed.
